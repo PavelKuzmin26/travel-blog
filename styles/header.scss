@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  .logo {
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: bolder;
+    i {
+      color: $blue;
+      padding-right: 0.5rem;
+    }
+  }
+  .navbar {
+    a {
+      color: $light-color;
+      font-size: 1.7rem;
+      display: inline-block;
+      margin: 0 1rem;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  .btn {
+    margin-top: 0;
+  }
+  #menu-btn {
+    font-size: 2.5rem;
+    color: $white;
+    cursor: pointer;
+    display: none;
+  }
+}

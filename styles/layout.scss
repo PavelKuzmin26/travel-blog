@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  //   overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $black;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $blue;
+  }
+}
+body {
+  background: $black;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: $blue;
+  border: $border;
+  cursor: pointer;
+  border-radius: 5rem;
+  background: none;
+  &:hover {
+    background: $blue;
+    color: $black;
+  }
+}
+section {
+  padding: 3rem 9%;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  span {
+    color: $blue;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+    color: $white;
+    margin-top: 0.5rem;
+  }
+}

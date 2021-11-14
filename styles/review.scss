@@ -1,0 +1,66 @@
+.review {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-template: 2rem;
+  .content {
+    flex: 1 1 42rem;
+    span {
+      font-size: 2rem;
+      color: $blue;
+    }
+    h3 {
+      font-size: 3rem;
+      color: $white;
+    }
+    p {
+      font-size: 1.4rem;
+      color: $light-color;
+      line-height: 2;
+      padding: 1rem 0;
+    }
+  }
+  .box-container {
+    display: flex;
+    flex: 1 1 42rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    .box {
+      flex: 1 1 20rem;
+      border-radius: 1rem;
+      padding: 2rem;
+      background: $bg-color;
+      border: 0.2rem solid $black;
+      &:hover {
+        border-color: $blue;
+      }
+      p {
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+        line-height: 2;
+        color: $light-color;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          height: 5rem;
+          width: 5rem;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .info {
+          h3 {
+            font-size: 1.7rem;
+            color: $white;
+          }
+          span {
+            color: $light-color;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

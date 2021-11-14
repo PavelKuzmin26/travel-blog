@@ -1,0 +1,36 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+// variables
+
+$blue: #29d9d5;
+$black: #111;
+$white: #fff;
+$light-color: #aaa;
+$bg-color: #222;
+$black-bg: rgba(17, 17, 17, 0.7);
+$border: 0.2rem solid $blue;
+
+//mixins
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
+// settings
+
+@import "layout";
+@import "header";
+@import "media";
+@import "home";
+@import "book-form";
+@import "about";
+@import "destination";
+@import "services";
+@import "gallery";
+@import "review";
+@import "blogs";
+@import "banner";
+@import "footer";
